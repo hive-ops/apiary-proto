@@ -1,0 +1,12 @@
+syntax = "proto3";
+import "apiary/v1/requests.proto";
+import "apiary/v1/responses.proto";
+
+package apiary.v1;
+
+service ApiaryService {
+    rpc GetEntries(GetEntriesRequest) returns (GetEntriesResponse) {}
+    rpc SetEntries(SetEntriesRequest) returns (SetEntriesResponse) {}
+    rpc DeleteEntries(DeleteEntriesRequest) returns (DeleteEntriesResponse) {}
+    rpc ClearEntries(ClearEntriesRequest) returns (ClearEntriesResponse) {}
+}
